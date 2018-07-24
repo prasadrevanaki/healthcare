@@ -11,6 +11,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap4.0/sticky-footer-navbar.css">
+	
+	<script src="https://fb.me/react-0.14.3.min.js"></script>
+	<script src="https://fb.me/react-dom-0.14.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap4.0/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap4.0/sticky-footer-navbar.css">
 	</head>
 	<body>
 			<div class="col-md-12"><jsp:include page="header.jsp"></jsp:include></div>
@@ -106,6 +113,13 @@
 				</c:when>
 			</c:choose>
 		</div>
+		<!-- ReactJS -->
+		<div class="container" id="container">
+			
+		</div>
+		<script type="text/babel">
+			ReactDOM.render(<h2>Bucky</h2>, document.getElementById('container'));
+		</script>
 		<footer class="footer">
 	      <div class="container">
 	        <span class="text-muted"> Mediwave Diagnostics &reg; &copy;  2018-2019 </span>
